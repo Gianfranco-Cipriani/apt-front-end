@@ -1,6 +1,23 @@
-🅰🅿🆃-🅵🆁🅾🅽🆃-🅴🅽🅳
+# 🅰🅿🆃-🅵🆁🅾🅽🆃-🅴🅽🅳
                                                                                                
-sɪᴍᴘʟᴇ ᴀᴘᴛ ғʀᴏɴᴛ-ᴇɴᴅ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴘᴀᴄᴋᴀɢᴇs ᴀɴᴅ sʏsᴛᴇᴍ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ
+## sɪᴍᴘʟᴇ ᴀᴘᴛ ғʀᴏɴᴛ-ᴇɴᴅ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴘᴀᴄᴋᴀɢᴇs ᴀɴᴅ sʏsᴛᴇᴍ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ
+
+## Prerequisites
+If not already installed, install dialog package.
+Ex. `sudo apt install dialog`
+
+## Run
+```
+git clone https://github.com/gAzraelc/apt-front-end.git
+cd apt-front-end
+chmod +x apt-front-end-1.0.0.sh
+
+```
+## (Optional)
+make an alias Ex. 
+`alias sys-update=~/apt-front-end/apt-front-end-1.0.0.sh`
+in .bashrc save, exit and restart terminal emulator
+
 
 Copyright (C) 2020  Gianfranco Cipriani
 
