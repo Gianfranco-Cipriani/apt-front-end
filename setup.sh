@@ -28,7 +28,7 @@ if [ $SHELL == "/usr/bin/bash" -o $SHELL == "/bin/bash" ]
 then
     sudo printf "%s\n" "alias sys-maintenance=~/apt-front-end/apt-front-end-1.0.0.sh" >> ~/.bashrc
     echo "alias sys-maintenance set"
-elif [ $SHELL == "/bin/zsh" -o $SHELL == "/usr/bin/zsh"]
+elif [ $SHELL == "/usr/bin/zsh" -o $SHELL == "/bin/zsh"]
 then
     sudo printf "%s\n" "alias sys-maintenance=~/apt-front-end/apt-front-end-1.0.0.sh" >> ~/.zshrc
     echo "alias sys-maintenance set"
