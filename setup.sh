@@ -32,6 +32,7 @@ elif [ $SHELL == "/bin/zsh" || $SHELL == "/usr/bin/zsh"]
 then
     sudo printf "%s\n" "alias sys-maintenance=~/apt-front-end/apt-front-end-1.0.0.sh" >> ~/.zshrc
     echo "alias sys-maintenance set"
+fi
 
 # make the main script executable
 sudo chmod +x apt-front-end-1.0.0.sh
