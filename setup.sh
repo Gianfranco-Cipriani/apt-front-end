@@ -18,23 +18,28 @@
 # to work properly.
 ############################################################
 
+# Terminal colors for echo messages
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
 # Install prerequisite packages
 sudo apt install dialog
-echo "install required packages done"
+echo -e "${GREEN}install required packages done${NC}"
 
-# Check for shell type and make an alias
-echo make an alias...
-if [ $SHELL == "/usr/bin/bash" -o $SHELL == "/bin/bash" ]
+# Check for shell type, make an alias and reload shell .rc file
+echo -e "${GREEN}make an alias...${NC}"
+if [ $SHELL == "/usr/bin/bash" ] || [ $SHELL == "/bin/bash" ]
 then
     sudo printf "%s\n" "alias sys-maintenance=~/apt-front-end/apt-front-end-1.0.0.sh" >> ~/.bashrc
-    echo "alias sys-maintenance set"
-elif [ $SHELL == "/usr/bin/zsh" -o $SHELL == "/bin/zsh"]
+    echo -e "${GREEN}alias sys-maintenance set${NC}"
+elif [ $SHELL == "/usr/bin/zsh" ] || [ $SHELL == "/bin/zsh" ]
 then
     sudo printf "%s\n" "alias sys-maintenance=~/apt-front-end/apt-front-end-1.0.0.sh" >> ~/.zshrc
-    echo "alias sys-maintenance set"
+    echo -e "${GREEN}alias sys-maintenance set${NC}"
 fi
 
 # make the main script executable
 sudo chmod +x apt-front-end-1.0.0.sh
 
-echo Done
+echo -e "${GREEN}Done${NC}"
+echo -e "${GREEN}Restart terminal for changes to take effect${NC}"
