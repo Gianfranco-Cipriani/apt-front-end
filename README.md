@@ -13,6 +13,11 @@ cd apt-front-end
 chmod +x apt-front-end-1.0.0.sh
 
 ```
+## Update
+Now there is a setup to automate the process and makes all things easier and less tedious.
+Run it in the same directory:
+`./setup.sh`
+
 ## (Optional)
 make an alias Ex. 
 `alias sys-update=~/apt-front-end/apt-front-end-1.0.0.sh`
