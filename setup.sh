@@ -26,7 +26,7 @@ NC='\033[0m' # No Color
 sudo apt install dialog
 echo -e "${GREEN}install required packages done${NC}"
 
-# Check for shell type, make an alias and reload shell .rc file
+# Check for shell type and make an alias
 echo -e "${GREEN}make an alias...${NC}"
 if [ $SHELL == "/usr/bin/bash" ] || [ $SHELL == "/bin/bash" ]
 then
